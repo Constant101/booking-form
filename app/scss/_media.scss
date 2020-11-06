@@ -1,0 +1,182 @@
+@media (min-width: 1280px) {
+}
+@media (max-width: 1280px) {
+  .booking-form .form-control {
+    font-size: calc(13px + (5 + 5 * 0.7) * ((100vw - 320px) / 1280)) !important;
+  }
+  .booking-form {
+    .submit-btn {
+      width: 100%;
+      padding: 1.5rem 3.2rem;
+    }
+  }
+  .booking-form__destination {
+    width: 28.26%;
+    padding-left: 37px;
+  }
+}
+@media (max-width: 1024px) {
+  .booking-form {
+    padding: 0 30px;
+    form {
+      .booking-form__wrapper {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .booking-form__destination {
+          padding-left: 40px;
+          width: 50%;
+          &::after {
+            top: 100%;
+            height: 88px;
+          }
+        }
+        .booking-form__check-dates {
+          width: 50%;
+          .booking-form__check-out::after {
+            display: none;
+          }
+        }
+        .booking-form__guests {
+          width: 50%;
+          max-width: 300px;
+          padding-left: 40px;
+        }
+        .booking-form__check-button {
+          width: 50%;
+          max-width: 370px;
+          .form-btn {
+            .plus-btn {
+              order: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 968px) {
+  .booking-form {
+    margin: 0 auto;
+    form {
+      .booking-form__wrapper {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        .booking-form__destination {
+          padding-left: 0;
+          width: 100%;
+          max-width: 400px;
+          &::after {
+            display: none;
+          }
+        }
+        .booking-form__check-dates {
+          width: 100%;
+          max-width: 400px;
+          padding-left: 0;
+          .booking-form__check-out::after {
+            display: none;
+          }
+        }
+        .booking-form__guests {
+          width: 100%;
+          max-width: 400px;
+          padding-left: 0;
+          .form-group {
+            padding: 22px 33px 22px 11px;
+          }
+        }
+        .booking-form__check-button {
+          width: 100%;
+          max-width: 370px;
+          .form-btn {
+            .plus-btn {
+              order: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 870px) {
+  .booking-form {
+    padding: 0 30px;
+    form {
+      .booking-form__wrapper {
+        justify-content: center;
+        align-items: center;
+        .booking-form__destination {
+          padding-left: 0;
+          width: 100%;
+          max-width: 400px;
+          &::after {
+            display: none;
+          }
+        }
+        .booking-form__check-dates {
+          width: 100%;
+          max-width: 400px;
+          padding-left: 0;
+          .booking-form__check-out::after {
+            display: none;
+          }
+        }
+        .booking-form__guests {
+          width: 100%;
+          max-width: 400px;
+          padding-left: 0;
+          .form-group {
+            padding: 22px 33px 22px 11px;
+          }
+        }
+        .booking-form__check-button {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+      .datepicker-modal {
+        width: 80%;
+        .datepicker-table {
+          width: 225px;
+          .datepicker-day-button {
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 368px) {
+  .booking-form__check-button {
+    max-width: 370px;
+    .form-btn {
+      .submit-btn {
+        width: 100%;
+        padding: 1.5rem 2rem;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-height: 368px) {
+  .booking-form {
+    padding: 0 30px;
+    form {
+      .booking-form__wrapper {
+        justify-content: center;
+        align-items: center;
+        .form-group {
+          padding: 10px 22px 9px 11px;
+        }
+        .booking-form__guests .form-group {
+          padding: 8px 16px 9px 11px;
+        }
+      }
+    }
+  }
+  .datepicker-modal {
+    width: 50%;
+  }
+}

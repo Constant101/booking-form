@@ -1,0 +1,12 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "AvenirNextCyr-Medium";
+  src: url("./fonts/AvenirNextCyr-Medium.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/AvenirNextCyr-Medium.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/AvenirNextCyr-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/AvenirNextCyr-Medium.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/AvenirNextCyr-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form-Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+					<div class="booking-form">
+						<form>
+							<div class="booking-form__wrapper">
+								<div class="booking-form__destination">
+									<div class="form-group dates-input">
+										<span class="form-label">Место или название отеля</span>
+										<div class="input-area">
+											<span>
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="19" viewBox="0 0 15 19">
+													<image id="Эллипс_2" data-name="Эллипс 2" width="15" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAATCAMAAAB4HKeYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/FBMVEX////9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDgAAAAmK45DAAAAUnRSTlMAAlmy6lojzCTcZhtl28+2DM1bClbU+d5cuGRUYuwdeuf6CAb83SjirlVXdJ9gwNZL8DLZiAvhXRNPj8gBbekXSP0wtAMtH5495aU38rMuwvSM/L6oiQAAAAFiS0dEU3pnHQYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCwUCLTV0Eni1AAAA10lEQVQY0z2O2VbCQBBEa2CAQAgZIYmCRgwoaJBFFNxwAXdE0Pr/j3GYcKiXOre7q7sBQKTSkjKdETDK5pgol12jJZkv2MIuOpSWHi7RVWZOudwRKNOpwPMD30Nll3uosoZ9E/dwwCpCHsJnXdXpw+YRIjYQsAnFAA0e44TWtt9iG6c6f2byMTo8R5c9IO5H/RjC4QDqgsPkT2R4qV++opvgaMxrbTchbw3f8X6y9gc+Pml7nkYzUxc9vrziLWRns+dd8uPzi/PJhvG90Od/mthqufr9S/Af7IIjICHgv9wAAAAASUVORK5CYII="/>
+												  </svg>
+											</span>
+											<input class="form-control" type="text" placeholder="Введите здесь место">
+										</div>
+									</div>
+								</div>
+								<div class="booking-form__check-dates">
+										<div class="booking-form__check-in">
+											<div class="form-group dates-input">
+												<span class="form-label">Заезд</span>
+												<div class="input-area">
+													<span>
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="19" viewBox="0 0 18 19">
+														  <image id="Vector_Smart_Object_копия" data-name="Vector Smart Object копия" width="18" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAMAAACqTK3AAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAyVBMVEX9sDiAgID9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDj9sDgAAAB74FkyAAAAQXRSTlMAABTptALXEVqL93B5Ne3P07L5oKYeGPTCBOUQDgUKRv3vDyky4MsJHNghm6kDWPw0I0s5AURFYBY7inIIgk+f9vqNZn0AAAABYktHREIQ1z30AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFAi4cHY2zGgAAANFJREFUGNN1ztcOgkAARNFhxYp1bSACKhYUu9jr/P9PqcmaoIn38SSTDACIhI5kKpWEnhDQNCCdyTJn5Mm8kWM2k9ZQKPKrYgElliuU1RpZq0pWyiyBrDeaJqxWy4LZbNTJF9loO4DrAk4btqJYirxOt+dL6fe6HU9RfzAcBeNxMBoO+v+HEz207OnUnoX6RNGcC7Ekl2LB+WfoB8BqBQT+Z+isN4i2uwibtaNoTx6O5PFA7hWJ0zm6XK+X6HwSb5K8xU/cKHHnT3e44SMOj9B9AlIcMKeDbjI/AAAAAElFTkSuQmCC"/>
+														  </svg>
+													</span>
+													<input class="datepicker form-control input-date" placeholder="7 января" type="text" required>
+												</div>
+											</div>
+										</div>
+										<div class="booking-form__check-out">
+											<div class="form-group dates-input">
+												<span class="form-label">Выезд</span>
+												<div class="input-area">
+													
+													<input class="datepicker form-control input-date" placeholder="22 февраля" type="text" required>
+													<span>
+														<svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7">
+															<defs>
+																<style>
+																  .cls-1 {
+																	fill: #8b9198;
+																  }
+																</style>
+															  </defs>
+															<path id="Прямоугольник_3_копия_4" data-name="Прямоугольник 3 копия 4" class="cls-1" d="M998.392,176.419a0.793,0.793,0,0,1,.935-0.309l5.6,5.569a1.094,1.094,0,0,1-1.24,1.237l-5.609-5.568A0.782,0.782,0,0,1,998.392,176.419Zm5,6.157a0.787,0.787,0,0,1-.31-0.928l5.6-5.569a0.8,0.8,0,0,1,.94.31,0.787,0.787,0,0,1,.31.928l-5.61,5.568A0.784,0.784,0,0,1,1003.39,182.576Z" transform="translate(-998 -176)"/>
+														  </svg>
+														  
+													</span>
+												</div>
+											</div>
+										</div>		
+								</div>
+								<div class="booking-form__guests">
+									<div class="form-group">
+										<div class="booking-form__guests-row">
+											<div class="booking-form__guests-item">
+												<label for="children">Номера:</label>
+		
+												<div class="counter">
+													
+														<input id="children" type="text" value="0">
+														
+														<span class="counter__btn" data-operation="plus">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+		
+																<image id="Слой_26" data-name="Слой 26" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEWAgIDtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRUAAADfHDZyAAAAF3RSTlMAPTcc6PAQBsfMApl/YzA2+ecIC8HdiDVK9LQAAAABYktHRBibaYUeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFBTAVtV8i5AAAADZJREFUCNdjYAABRiYGGGBmYWWDMtk5xMU5uSBsbnEg4AEzecXBgA/I5BeAsAWFGIRFRKFADABPTwMvtACldwAAAABJRU5ErkJggg=="/>
+																</svg>
+																
+														</span>
+														<span class="counter__btn" data-operation="minus">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+		
+																<image id="Слой_26" data-name="Слой 26" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEWAgIDtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRUAAADfHDZyAAAAF3RSTlMAPTcc6PAQBsfMApl/YzA2+ecIC8HdiDVK9LQAAAABYktHRBibaYUeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFBTAVtV8i5AAAADZJREFUCNdjYAABRiYGGGBmYWWDMtk5xMU5uSBsbnEg4AEzecXBgA/I5BeAsAWFGIRFRKFADABPTwMvtACldwAAAABJRU5ErkJggg=="/>
+																</svg>
+																
+																
+														</span>	
+		
+													
+												</div>
+												<!-- counter END -->
+		
+											</div>
+											<!-- search-form-guest end -->
+											<div class="booking-form__guests-item">
+											<label for="children">Взрослые:</label>
+
+										
+											<div class="counter">
+													
+												<input id="children" type="text" value="0">
+												
+												<span class="counter__btn" data-operation="plus">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+
+														<image id="Слой_26" data-name="Слой 26" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEWAgIDtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRUAAADfHDZyAAAAF3RSTlMAPTcc6PAQBsfMApl/YzA2+ecIC8HdiDVK9LQAAAABYktHRBibaYUeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFBTAVtV8i5AAAADZJREFUCNdjYAABRiYGGGBmYWWDMtk5xMU5uSBsbnEg4AEzecXBgA/I5BeAsAWFGIRFRKFADABPTwMvtACldwAAAABJRU5ErkJggg=="/>
+														</svg>
+														
+												</span>
+												<span class="counter__btn" data-operation="minus">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+
+														<image id="Слой_26" data-name="Слой 26" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEWAgIDtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRUAAADfHDZyAAAAF3RSTlMAPTcc6PAQBsfMApl/YzA2+ecIC8HdiDVK9LQAAAABYktHRBibaYUeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFBTAVtV8i5AAAADZJREFUCNdjYAABRiYGGGBmYWWDMtk5xMU5uSBsbnEg4AEzecXBgA/I5BeAsAWFGIRFRKFADABPTwMvtACldwAAAABJRU5ErkJggg=="/>
+														</svg>
+														
+														
+												</span>	
+											</div>
+											<!-- counter END -->
+
+											</div>
+											<!-- search-form-guest end -->
+											<div class="booking-form__guests-item">
+										<label for="children">Дети:</label>
+
+										
+										<div class="counter">
+													
+											<input id="children" type="text" value="0">
+											
+											<span class="counter__btn" data-operation="plus">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+
+													<image id="Слой_26" data-name="Слой 26" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEWAgIDtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRUAAADfHDZyAAAAF3RSTlMAPTcc6PAQBsfMApl/YzA2+ecIC8HdiDVK9LQAAAABYktHRBibaYUeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFBTAVtV8i5AAAADZJREFUCNdjYAABRiYGGGBmYWWDMtk5xMU5uSBsbnEg4AEzecXBgA/I5BeAsAWFGIRFRKFADABPTwMvtACldwAAAABJRU5ErkJggg=="/>
+													</svg>
+													
+											</span>
+											<span class="counter__btn" data-operation="minus">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+
+													<image id="Слой_26" data-name="Слой 26" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEWAgIDtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRXtmRUAAADfHDZyAAAAF3RSTlMAPTcc6PAQBsfMApl/YzA2+ecIC8HdiDVK9LQAAAABYktHRBibaYUeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AsFBTAVtV8i5AAAADZJREFUCNdjYAABRiYGGGBmYWWDMtk5xMU5uSBsbnEg4AEzecXBgA/I5BeAsAWFGIRFRKFADABPTwMvtACldwAAAABJRU5ErkJggg=="/>
+													</svg>
+													
+													
+											</span>	
+										</div>
+										<!-- counter END -->
+
+											</div>
+										</div>
+									</div>
+										
+								</div>
+								<div class="booking-form__check-button">
+									<div class="form-btn">
+										<div class="plus-btn">
+											<button class="addButton"></button>
+										</div>
+										<div class="submit-btn__wrapper">
+											<button class="submit-btn">Найти</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+			</div>
+		</div>
+	</div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>	
+  <script src="js/main.js"></script>
+</body>
+</html>
